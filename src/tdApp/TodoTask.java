@@ -16,16 +16,24 @@ public class TodoTask {
 		
 	}
 	
-//	public void setTask (String task) {
-//		m_task = task;
-//	}
-	
 	public String getTask () {
 		return m_taskDeskription;
 	}
 	
 	public boolean isTaskDone() {
 		return m_doneTask;
+	}
+	
+	public void setTaskDone() {
+		m_doneTask = true;
+	}
+	
+	public void takeTaskBackToList() {
+		m_doneTask = false;
+	}
+	
+	public int getTaskID() {
+		return m_taskID;
 	}
 
 }
